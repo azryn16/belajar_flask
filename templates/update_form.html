@@ -1,0 +1,23 @@
+<!-- file: update_form.html -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contoh Flask MySQL</title>
+        <link rel="stylesheet" media="screen" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+    </head>
+    <body>
+        <div class="container">
+            <h2>Ubah Data</h2>
+            <form action="{{ url_for('update_process') }}" method="post">
+                <div class="form-group">
+                    <label for="nama">Nama</label>
+                    <input type="text" class="form-control" name="nama" value="{{ data[1] }}"/>
+                </div>
+                <input type="hidden" name="no" value="{{ data[0] }}">
+                <button type="submit" class="btn btn-primary">Simpan</button>
+            </form>
+            <br/>
+            <a href="/" class="btn btn-danger" role="button">Kembali</a>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contoh Session dalam Flask</title>
+	<link rel="stylesheet" media="screen" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+</head>
+<body>
+<div class="container">
+	<h2>Contoh Session</h2>
+	<p>Selamat datang {{ username }}. Anda telah berhasil login.</p>
+	<a href="/logout" class="btn btn-outline-danger" role="button">Logout</a>
+</div>
+</body>
+<html>

@@ -1,0 +1,20 @@
+<!-- file : P06-jinja-2.html -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contoh Template Jinja2 Kedua</title>
+    </head>
+    <body>
+        <h2>Contoh Penggunaan Operator pada Jinja2</h2>
+        a = {{ a }} <br>
+        b = {{ b }} <br>
+        a + b = {{ a + b }} <br>
+        c = {{ c }}
+        {% if a == c %}
+            <p>nilai A sama dengan C</p>
+        {% endif %} <br>
+        {% if a == 20 and b == 30 %}
+            <p>Anda Benar</p>
+        {% endif %}
+    </body>
+</html>

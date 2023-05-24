@@ -1,0 +1,15 @@
+<!-- file : halaman 1.html -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contoh Tampilan Cookie</title>
+	<link rel="stylesheet" media="screen" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+</head>
+<body>
+<div class="container">
+	<h2>Halaman 1</h2>
+	<p>Nilai "var" pada cookie : {{ var }}</p>
+	<a href="/" class="btn btn-outline-danger" role="button">Kembali</a>
+</div>
+</body>
+</html>

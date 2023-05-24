@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Daftar Mahasiswa</title>
+</head>
+<body>
+    <h1>Daftar Mahasiswa</h1>
+    <ul>
+        {% for mahasiswa in mahasiswa_list %}
+        <li>{{ mahasiswa.name }} ({{ mahasiswa.nim }})</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

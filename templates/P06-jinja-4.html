@@ -1,0 +1,17 @@
+<!-- file : P06-jinja-4.html -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contoh Template Jinja2 Keempat</title>
+    </head>
+    <body>
+        <h2>Contoh Penggunaan Perulangan pada Jinja2</h2>
+
+        {# menampilkan setiap elemen dalam list #}
+        <ul>
+        {% for elemen in navigasi %}
+            <li><a href="{{ elemen[0] }}">{{ elemen[1] }}</a></li>
+        {% endfor %}
+        </ul>
+    </body>
+</html>
